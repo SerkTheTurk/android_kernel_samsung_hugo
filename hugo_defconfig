@@ -28,6 +28,8 @@ CONFIG_VECTORS_BASE=0xffff0000
 CONFIG_ARCH_HAS_CPU_IDLE_WAIT=y
 CONFIG_DEFCONFIG_LIST="/lib/modules/$UNAME_RELEASE/.config"
 CONFIG_CONSTRUCTORS=y
+
+#Direcotry to initramfs
 CONFIG_INITRAMFS_SOURCE="~/android/kernel/initramfs"
 
 #
