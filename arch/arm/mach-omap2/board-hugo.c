@@ -601,7 +601,8 @@ static int __init latona_opp_init(void)
 }
 device_initcall(latona_opp_init);
 
-MACHINE_START(HUGO, "Hugo Samsung Board")
+/* fixed machine name for ro.hardware (Jonathan Grundmann, 2013) */
+MACHINE_START(HUGO, "hugo")
     .phys_io = 0x48000000,
     .io_pg_offst = ((0xfa000000) >> 18) & 0xfffc,
     .boot_params = 0x80000100,
